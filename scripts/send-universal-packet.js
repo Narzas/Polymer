@@ -9,9 +9,13 @@ const { getConfigPath } = require('./private/_helpers');
 const { getIbcApp } = require('./private/_vibc-helpers.js');
 
 async function main() {
+    
     const accounts = await hre.ethers.getSigners();
+    
     const config = require(getConfigPath());
+    
     const sendConfig = config.sendUniversalPacket;
+
 
     const networkName = hre.network.name;
     // Get the contract type from the config and get the contract
