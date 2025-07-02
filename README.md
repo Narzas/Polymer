@@ -194,10 +194,12 @@ module.exports = {
 
 Then run:
 
+
 ```bash
 # Usage: just deploy [source] [destination]
 just deploy optimism base
 ```
+
 
 where the script will automatically detect whether you are using custom or universal IBC channels.
 
